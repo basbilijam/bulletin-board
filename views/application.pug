@@ -1,0 +1,17 @@
+html
+  head
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous")
+    link(rel="stylesheet" href="/public/css/application.css")
+  body
+    nav(class="navbar navbar-light bg-faded")
+      a(class="navbar-brand" href="/") Messageboard
+      ul.nav.navbar-nav.float-xs-right
+        li.nav-item
+          a(class="navbar-text" href="/add-message") ADD MESSAGE
+        li.nav-item
+          a(class="navbar-text" href="/notices") ALL MESSAGES
+
+    block content
+
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+script(src="../index.js")
